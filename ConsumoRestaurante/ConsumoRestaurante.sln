@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - UI", "1 - UI", "{AF0D47D4-45D0-4F7C-811A-ADA3433A7085}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Domain", "2 - Domain", "{E8782AFB-965D-47DD-AE48-89632846B061}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Infra", "3 - Infra", "{A9AF6844-B9B5-43CE-B910-918A9C034CEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumoRestaurante.Domain", "src\ConsumoRestaurante.Domain\ConsumoRestaurante.Domain.csproj", "{8E788240-B04C-4234-8654-1D591A98C337}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumoRestaurante.Infra.Data", "src\ConsumoRestaurante.Infra.Data\ConsumoRestaurante.Infra.Data.csproj", "{6200B8DA-2746-4BF6-BB71-B42530C12E12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumoRestaurante.Infra.CrossCutting.IoC", "src\ConsumoRestaurante.Infra.CrossCutting.IoC\ConsumoRestaurante.Infra.CrossCutting.IoC.csproj", "{E86E07AB-9A30-4B5B-A5DD-23862A28E384}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumoRestaurante.UI.WebSite", "src\ConsumoRestaurante.UI.WebSite\ConsumoRestaurante.UI.WebSite.csproj", "{AD3EC2FC-AF0E-41FB-AC9E-00B46079F02F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E788240-B04C-4234-8654-1D591A98C337}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E788240-B04C-4234-8654-1D591A98C337}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E788240-B04C-4234-8654-1D591A98C337}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E788240-B04C-4234-8654-1D591A98C337}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6200B8DA-2746-4BF6-BB71-B42530C12E12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6200B8DA-2746-4BF6-BB71-B42530C12E12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6200B8DA-2746-4BF6-BB71-B42530C12E12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6200B8DA-2746-4BF6-BB71-B42530C12E12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E86E07AB-9A30-4B5B-A5DD-23862A28E384}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E86E07AB-9A30-4B5B-A5DD-23862A28E384}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E86E07AB-9A30-4B5B-A5DD-23862A28E384}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E86E07AB-9A30-4B5B-A5DD-23862A28E384}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD3EC2FC-AF0E-41FB-AC9E-00B46079F02F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD3EC2FC-AF0E-41FB-AC9E-00B46079F02F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD3EC2FC-AF0E-41FB-AC9E-00B46079F02F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD3EC2FC-AF0E-41FB-AC9E-00B46079F02F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8E788240-B04C-4234-8654-1D591A98C337} = {E8782AFB-965D-47DD-AE48-89632846B061}
+		{6200B8DA-2746-4BF6-BB71-B42530C12E12} = {A9AF6844-B9B5-43CE-B910-918A9C034CEA}
+		{E86E07AB-9A30-4B5B-A5DD-23862A28E384} = {A9AF6844-B9B5-43CE-B910-918A9C034CEA}
+		{AD3EC2FC-AF0E-41FB-AC9E-00B46079F02F} = {AF0D47D4-45D0-4F7C-811A-ADA3433A7085}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {930AED15-E0D0-4666-AF9C-787015072BFA}
+	EndGlobalSection
+EndGlobal

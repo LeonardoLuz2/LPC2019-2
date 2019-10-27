@@ -1,0 +1,25 @@
+﻿@model ConsumoRestaurante.UI.WebSite.ViewModels.SugestaoViewModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Sugestão de restaurante</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Restaurante)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Restaurante)
+        </dd>
+        <dt class="col-sm-2">
+            Média de gasto
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Valor)
+        </dd>
+    </dl>
+</div>
