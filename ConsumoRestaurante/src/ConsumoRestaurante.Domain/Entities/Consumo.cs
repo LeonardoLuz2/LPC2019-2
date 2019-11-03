@@ -1,19 +1,20 @@
-﻿using ConsumoRestaurante.Domain.Entities.Base;
-using System;
+﻿using System;
 
 namespace ConsumoRestaurante.Domain.Entities
 {
-    public class Consumo : Entity
+    public class Consumo
     {
         protected Consumo() { }
 
-        public Consumo(DateTime data, decimal valor, Guid restauranteId)
+        public Consumo(Guid id, DateTime data, decimal valor, Guid restauranteId)
         {
+            Id = id == Guid.Empty ? Guid.NewGuid() : id;
             Data = data;
             Valor = valor;
             RestauranteId = restauranteId;
         }
 
+        public Guid Id { get; private set; }
         public DateTime Data { get; private set; }
         public decimal Valor { get; private set; }
         public virtual Restaurante Restaurante { get; set; }

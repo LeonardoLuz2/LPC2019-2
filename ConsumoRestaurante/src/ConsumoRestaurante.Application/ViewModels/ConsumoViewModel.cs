@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace ConsumoRestaurante.UI.WebSite.ViewModels
+namespace ConsumoRestaurante.Application.ViewModels
 {
     public class ConsumoViewModel
     {
@@ -11,7 +11,6 @@ namespace ConsumoRestaurante.UI.WebSite.ViewModels
         [Display(Name = "Data")]
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
         [DataType(DataType.Date)]
-
         public DateTime Data { get; set; }
 
         public decimal Valor { get; set; }

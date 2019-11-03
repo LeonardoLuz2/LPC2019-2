@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 
-namespace ConsumoRestaurante.UI.WebSite.AutoMapper
+namespace ConsumoRestaurante.Application.AutoMapper
 {
     public static class AutoMapperConfig
     {

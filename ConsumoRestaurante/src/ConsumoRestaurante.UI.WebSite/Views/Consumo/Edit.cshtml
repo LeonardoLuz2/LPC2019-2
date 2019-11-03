@@ -1,4 +1,4 @@
-﻿@model ConsumoRestaurante.UI.WebSite.ViewModels.ConsumoViewModel
+﻿@model ConsumoRestaurante.Application.ViewModels.ConsumoViewModel
 
 @{
     ViewData["Title"] = "Edit";
@@ -23,12 +23,12 @@
                 <span asp-validation-for="Valor" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="RestauranteId" class="control-label">Restaurante</label>
+                <label asp-for="Restaurante.Id" class="control-label">Restaurante</label>
                 <select class="form-control" name="RestauranteId" required>
                     <option value="" disabled>Selecione o restaurante</option>
                     @foreach (var rest in ViewBag.Restaurantes)
                     {
-                        <!option value="@rest.Id" selected="@(rest.Id == Model.RestauranteId)">@rest.Nome</!option>
+                        <!option value="@rest.Id" selected="@(rest.Id == Model.Restaurante.Id)">@rest.Nome</!option>
                     }
                 </select>
            </div>

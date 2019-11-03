@@ -1,4 +1,4 @@
-﻿namespace ConsumoRestaurante.UI.WebSite.ViewModels
+﻿namespace ConsumoRestaurante.Application.ViewModels
 {
     public class SugestaoViewModel
     {

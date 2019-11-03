@@ -4,8 +4,8 @@ using ConsumoRestaurante.Domain.Entities;
 using ConsumoRestaurante.Domain.Interfaces.Repositories;
 using ConsumoRestaurante.Domain.Interfaces;
 using AutoMapper;
-using ConsumoRestaurante.UI.WebSite.ViewModels;
 using System.Collections.Generic;
+using ConsumoRestaurante.Application.ViewModels;
 
 namespace ConsumoRestaurante.UI.WebSite.Controllers
 {

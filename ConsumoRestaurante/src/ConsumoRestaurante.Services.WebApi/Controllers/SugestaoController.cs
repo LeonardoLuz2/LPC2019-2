@@ -4,9 +4,11 @@ using ConsumoRestaurante.Application.ViewModels;
 using ConsumoRestaurante.Domain.Interfaces.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ConsumoRestaurante.UI.WebSite.Controllers
+namespace ConsumoRestaurante.Services.WebApi.Controllers
 {
-    public class SugestaoController : Controller
+    [Route("api/[controller]")]
+    [ApiController]
+    public class SugestaoController : ApiController
     {
         private readonly IConsumoRepository _consumoRepository;
         private readonly IMapper _mapper;
@@ -17,7 +19,8 @@ namespace ConsumoRestaurante.UI.WebSite.Controllers
             _mapper = mapper;
         }
 
-        public IActionResult Index()
+        [HttpGet]
+        public IActionResult Get()
         {
             var sugestao = _consumoRepository.GetAll()
                 .GroupBy(x => x.RestauranteId)
@@ -27,9 +30,9 @@ namespace ConsumoRestaurante.UI.WebSite.Controllers
                     Valor = sl.Sum(s => s.Valor) / sl.Count()
                 }).OrderBy(x => x.Valor).FirstOrDefault();
 
-            if (sugestao == null) return View();
+            if (sugestao == null) return ResponseError("Não existem consumos cadastrados");
 
-            return View(new SugestaoViewModel
+            return ResponseOk(new SugestaoViewModel
             {
                 Restaurante = sugestao.Restaurante,
                 Valor = sugestao.Valor
